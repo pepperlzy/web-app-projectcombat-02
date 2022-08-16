@@ -1,0 +1,25 @@
+html,
+body,
+ul,
+li,
+p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font: 24px/1.5 Microsoft YaHei;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    border: 0;
+}
+img{
+    vertical-align: top;
+}

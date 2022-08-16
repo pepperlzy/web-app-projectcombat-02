@@ -1,0 +1,35 @@
+/* m-header start   */
+.m-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin: 18px 19px 0 29px;
+  }
+  .logo {
+    flex-grow: 1;
+  }
+  .logo img {
+    width: 146px;
+  }
+  .search img {
+    width: 38px;
+  }
+  a.login {
+    margin-right: 42px;
+    margin-left: 49px;
+  }
+  .login img {
+    width: 46px;
+  }
+  .download {
+    /* display: inline-block; */
+    width: 144px;
+    height: 48px;
+    background: #ff9f00;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+  }
+  /* end m-header */

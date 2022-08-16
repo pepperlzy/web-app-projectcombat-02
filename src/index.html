@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>移动端企业WebApp设计稿</title>
+    <!-- 引入默认样式 -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- 引入swiper插件样式 -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- 引入首页样式文件 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      /* m-nav satrt  */
+      .m-nav {
+        height: 74px;
+      }
+      #swiper-nav {
+        width: 100%;
+        height: 74px;
+      }
+      #swiper-nav .swiper-slide {
+        height: 74px;
+        line-height: 50px;
+      }
+      #swiper-nav .swiper-slide a {
+        display: inline-block;
+        height: 72px;
+        font-size: 28px;
+        color: #6b6b6b;
+        line-height: 72px;
+        /* 避免鼠标点击时造成重绘和重排 */
+        border-bottom: 2px solid transparent;
+      }
+      #swiper-nav .swiper-slide a.nav-active {
+        color: #ff9f00;
+        border-bottom: 2px solid #ff9f00;
+      }
+      /* end m-nav */
+    </style>
+  </head>
+  <body>
+    <!-- 头部导航栏 -->
+    <!-- m-header start  -->
+    <header class="m-header">
+      <a href="#" class="logo">
+        <img src="./images/logo-3@2x.png" alt="" />
+      </a>
+      <a href="#" class="search">
+        <img src="./images/search@2x.png" alt="" />
+      </a>
+      <a href="#" class="login">
+        <img src="./images/login@2x.png" alt="" />
+      </a>
+      <a href="#" class="download">下载 App</a>
+    </header>
+    <!-- end m-header -->
+    <!-- 导航模块 -->
+    <!-- m-nav start  -->
+    <nav class="m-nav">
+      <div class="swiper-container" id="swiper-nav">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="nav-active">首页</a>
+          </div>
+          <div class="swiper-slide"><a href="#">动画</a></div>
+          <div class="swiper-slide"><a href="#">番剧</a></div>
+          <div class="swiper-slide"><a href="#">国创</a></div>
+          <div class="swiper-slide"><a href="#">音乐</a></div>
+          <div class="swiper-slide"><a href="#">舞蹈</a></div>
+          <div class="swiper-slide"><a href="#">电视剧</a></div>
+          <div class="swiper-slide"><a href="#">影视</a></div>
+          <div class="swiper-slide"><a href="#">纪录片</a></div>
+          <div class="swiper-slide"><a href="#">游戏</a></div>
+          <div class="swiper-slide"><a href="#">知识</a></div>
+          <div class="swiper-slide"><a href="#">美食</a></div>
+          <div class="swiper-slide"><a href="#">科技</a></div>
+          <div class="swiper-slide"><a href="#">娱乐</a></div>
+          <div class="swiper-slide"><a href="#">直播</a></div>
+          <div class="swiper-slide"><a href="#">专栏</a></div>
+          <div class="swiper-slide"><a href="#">资讯</a></div>
+          <div class="swiper-slide"><a href="#">活动</a></div>
+          <div class="swiper-slide"><a href="#">课堂</a></div>
+        </div>
+      </div>
+    </nav>
+    <!-- end m-nav -->
+    <!-- 主体模块 -->
+    <!-- m-main start  -->
+    <main class="m-main">
+      <!-- banner 广告模块 -->
+      <!-- m-banner start  -->
+      <section class="m-banner">banner 广告</section>
+      <!-- end m-banner -->
+      <!-- 菜单模块 -->
+      <!-- m-menu start  -->
+      <nav class="m-menu">菜单模块</nav>
+      <!-- end m-menu -->
+      <!-- 推荐模块 -->
+      <!-- m-recommand start  -->
+      <section class="m-recommand">推荐模块</section>
+      <!-- end m-recommand -->
+      <!-- 热点模块 -->
+      <!-- m-hot start  -->
+      <section class="m-hot">热点模块</section>
+      <!-- end m-hot -->
+      <!-- 焦点模块 -->
+      <!-- m-foucs start  -->
+      <section class="m-foucs">焦点模块</section>
+      <!-- end m-foucs -->
+      <!-- 视频列表模块 -->
+      <!-- m-view-list start  -->
+      <section class="m-view-list">视频列表模块</section>
+      <!-- end m-view-list -->
+    </main>
+    <!-- end m-main -->
+    <!-- 底部导航模块 -->
+    <!-- topbar start  -->
+    <footer class="topbar">底部导航模块</footer>
+    <!-- end topbar -->
+
+    <!-- 引入swiper插件  -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper("#swiper-nav", {
+        slidesPerView: 6.5,
+      });
+    </script>
+  </body>
+</html>
