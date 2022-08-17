@@ -12,32 +12,60 @@
     <!-- 引入首页样式文件 -->
     <link rel="stylesheet" href="./css/index.css" />
     <style>
-      /* m-nav satrt  */
-      .m-nav {
-        height: 74px;
-      }
-      #swiper-nav {
+      /* m-hot start  */
+      .m-hot {
+        box-sizing: border-box;
+        margin-top: 18px;
         width: 100%;
-        height: 74px;
+        height: 234px;
+        padding: 0 20px;
+        background-color: #f7f7f7;
+        /* 解决margin塌陷 */
+        overflow: hidden;
       }
-      #swiper-nav .swiper-slide {
-        height: 74px;
-        line-height: 50px;
+      .m-hot ul li{
+      
+        padding: 20px 0 21px 0;
+        border-bottom: 1px solid #E6E6E6;
       }
-      #swiper-nav .swiper-slide a {
-        display: inline-block;
-        height: 72px;
-        font-size: 28px;
-        color: #6b6b6b;
-        line-height: 72px;
-        /* 避免鼠标点击时造成重绘和重排 */
-        border-bottom: 2px solid transparent;
+      .m-hot ul li a{
+        height: 76px;
+        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
       }
-      #swiper-nav .swiper-slide a.nav-active {
-        color: #ff9f00;
-        border-bottom: 2px solid #ff9f00;
+      .m-hot-con{
+      background-color: aqua;
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+        white-space: nowrap;
       }
-      /* end m-nav */
+      .m-hot-img {
+        width: 76px;
+        height: 76px;
+        flex-shrink: 0;
+      }
+      .m-hot-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .m-hot-play {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        
+      }
+      .m-hot-play img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     
+      /* end m-hot */
+      /* end m-main */
     </style>
   </head>
   <body>
@@ -91,19 +119,534 @@
     <main class="m-main">
       <!-- banner 广告模块 -->
       <!-- m-banner start  -->
-      <section class="m-banner">banner 广告</section>
+      <section class="m-banner">
+        <div class="swiper-container" id="swiper-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="banner-img">
+                <img src="./images/banner-2@2x.png" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner-img">
+                <img src="./images/banner-1@2x.png" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner-img">
+                <img src="./images/banner-3@2x.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!-- end m-banner -->
       <!-- 菜单模块 -->
       <!-- m-menu start  -->
-      <nav class="m-menu">菜单模块</nav>
+      <nav class="m-menu">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-1@2x(1).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-2@2x(2).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-3@2x(3).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-4@2x(4).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-5@2x(5).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-6@2x(6).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-7@2x(7).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-8@2x(8).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-9@2x(9).png" alt="" />
+              </div>
+              <p class="m-menu-title">番 剧</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="m-menu-img">
+                <img src="./images/menu-list-10@2x(10).png" alt="" />
+              </div>
+              <p class="m-menu-title">体育</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <!-- end m-menu -->
       <!-- 推荐模块 -->
       <!-- m-recommand start  -->
-      <section class="m-recommand">推荐模块</section>
+      <section class="m-recommand">
+        <ul class="m-recommand-tab">
+          <li class="tab-active">热门排行</li>
+          <li>最新热播</li>
+          <li>综合推荐</li>
+        </ul>
+        <div class="m-recommand-content">
+          <div class="m-recommand-content-list" style="display: block">
+            <div class="swiper-container" id="swiper-recommand1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list1@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list2@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#"
+                        >【人类高质量CG】咏春宁次： 笼中鸟心中拳 ,咏春宁次：
+                        笼中鸟心中</a
+                      >
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list3@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list5@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">【人类高质量CG】咏春宁次： 笼中鸟心中拳 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list6@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-recommand-content-list">
+            <div class="swiper-container" id="swiper-recommand2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list5@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list6@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">【人类高质量CG】咏春宁次： 笼中鸟心中拳 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list3@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list5@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">【人类高质量CG】咏春宁次： 笼中鸟心中拳 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list6@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-recommand-content-list">
+            <div class="swiper-container" id="swiper-recommand3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list3@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list1@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">【人类高质量CG】咏春宁次： 笼中鸟心中拳 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list3@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list5@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">【人类高质量CG】咏春宁次： 笼中鸟心中拳 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+                <div class="swiper-slide">
+                  <!-- 样式重用 -->
+                  <!-- common-list start  -->
+                  <div class="common-list">
+                    <a href="#">
+                      <img src="./images/common-list6@2x.png" alt="" />
+                      <div class="mask">
+                        <div class="common-list-play">
+                          <span class="icon-play"></span>
+                          <i>70.8万</i>
+                        </div>
+                        <div class="common-list-info">
+                          <span class="icon-info"></span>
+                          <i>11.5万</i>
+                        </div>
+                      </div>
+                    </a>
+                    <p class="common-list-title">
+                      <a href="#">透明手表。下集预告 </a>
+                    </p>
+                  </div>
+                  <!-- end common-list -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- end m-recommand -->
       <!-- 热点模块 -->
       <!-- m-hot start  -->
-      <section class="m-hot">热点模块</section>
+      <section class="m-hot">
+        <ul>
+          <li>
+            <a href="">
+              <div class="m-hot-img">
+                <img src="./images/m-hot1@2x.png" alt="" />
+              </div>
+              <div class="m-hot-con">
+                <p class="m-hot-con-title">自制战斗机式的打水仗摩托车</p>
+                <span class="m-hot-con-desc"
+                  >跟小朋友打水仗输了做了个战斗机准备一雪前耻</span
+                >
+              </div>
+              <div class="m-hot-play">
+                <img src="./images/m-hot-3.png" alt="">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="m-hot-img">
+                <img src="./images/m-hot2@2x.png" alt="" />
+              </div>
+              <div class="m-hot-con">
+                <p class="m-hot-con-title">原 神 之 友 （第九期）</p>
+                <span class="m-hot-con-desc"
+                  >所有原神玩家都可以参加！期还会额外有一个满 跟小朋友打水仗输了做了个战斗机准备一雪前耻</span
+                >
+              </div>
+              <div class="m-hot-play">
+                <img src="./images/m-hot-3.png" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
       <!-- end m-hot -->
       <!-- 焦点模块 -->
       <!-- m-foucs start  -->
@@ -119,13 +662,73 @@
     <!-- topbar start  -->
     <footer class="topbar">底部导航模块</footer>
     <!-- end topbar -->
-
-    <!-- 引入swiper插件  -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script>
-      var mySwiper = new Swiper("#swiper-nav", {
-        slidesPerView: 6.5,
-      });
-    </script>
   </body>
+  <!-- 页面初始化 -->
+  <script>
+    // 页面初始化时调用
+    initPage();
+    function initPage() {
+      // 获取html元素
+      var html = document.documentElement;
+      // 获取屏幕可视宽
+      var clientWidth = html.clientWidth;
+      // 动态设置html的font-size的大小
+      html.style.fontSize = clientWidth / 10 + "px";
+    }
+    // 当窗口发生改变时调用
+    window.onresize = initPage;
+  </script>
+  <!-- 选项卡模块 -->
+  <script>
+    // 获取选项卡
+    var tablist = document.querySelectorAll(".m-recommand .m-recommand-tab li");
+    console.log(tablist);
+    // 获取显示内容区
+    var re_con_list = document.querySelectorAll(
+      ".m-recommand-content .m-recommand-content-list"
+    );
+    var len = tablist.length;
+    for (var i = 0; i < len; i++) {
+      tablist[i].index = i;
+      tablist[i].onclick = function () {
+        for (var j = 0; j < len; j++) {
+          tablist[j].classList.remove("tab-active");
+          re_con_list[j].style.display = "none";
+        }
+        this.classList.add("tab-active");
+        // console.log(tablist[tablist.index]);
+        re_con_list[this.index].style.display = "block";
+        // 重新初始化swiper
+        new Swiper("#swiper-recommand" + (this.index + 1), {
+          slidesPerView: 2,
+          spaceBetween: 19,
+        });
+      };
+    }
+  </script>
+
+  <!-- 引入swiper插件  -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    var mySwiper1 = new Swiper("#swiper-nav", {
+      slidesPerView: 6.5,
+    });
+  </script>
+  <!-- banner 广告模块初始化 -->
+  <script>
+    var mySwiper2 = new Swiper("#swiper-banner", {
+      // 如果需要分页器
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+  <!-- 选项卡模块 -->
+  <script>
+    var mySwiper3 = new Swiper("#swiper-recommand1", {
+      slidesPerView: 2,
+      spaceBetween: 19,
+    });
+  </script>
 </html>
