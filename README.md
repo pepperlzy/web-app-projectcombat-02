@@ -45,4 +45,4 @@
 
 ## 项目效果图
 
-![1660831720059](./src/images/1660831720059.png)
+![1660831720059](https://user-images.githubusercontent.com/109357565/192484752-f2a4659e-dca3-4c82-92b7-7c2e762531d6.png)
